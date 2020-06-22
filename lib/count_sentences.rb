@@ -7,14 +7,15 @@ class String
   end
 
   def question?
-
+    self.end_with?("?") ? true : false
   end
 
   def exclamation?
-
+    self.end_with?("!") ? true : false
   end
 
   def count_sentences
-
+    sentances = self.split(".", "?", "!")
+    binding.pry
   end
 end
